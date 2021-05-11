@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+:root{
+--DarkBlue: hsl(233, 26%, 24%);
+--LimeGreen: hsl(136, 65%, 51%);
+--BrightCyan: hsl(192, 70%, 51%);
+--GrayishBlue: hsl(233, 8%, 62%);
+--LightGrayishBlue: hsl(220, 16%, 96%);
+--VeryLightGray: hsl(0, 0%, 98%);
+--White: hsl(0, 0%, 100%);
+}
+nav{
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.ulNav{
+  display: flex;
+  justify-content: space-around;
+    list-style: none;
+}
+.ulNav li{
+    margin-right: 20px;
+    color: gray;
+}
+.ulNav li:hover{
+border-bottom: var(--LimeGreen) solid 3px;
+}
+button{
+    color: white;
+    height: 50px;
+    width: 140px;
+    border-radius: 25px;
+    border: 1px;
+    cursor: pointer;
+    background: linear-gradient(to right ,var(--LimeGreen) ,var(--BrightCyan));
+}
+button:hover{
+    background: linear-gradient(to right ,hsl(136deg 65% 51% / 65%) 
+    ,hsl(192deg 70% 51% / 80%));  
+}
+section{
+
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 10%;
+   
+   
+}
+.right-1{
+    width: 50%;
+    font-size: 18px;
+    color: var(--GrayishBlue);
+    
+}
+h1{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: black;
+}
+.take{
+    padding-bottom: 40px;
+    width: 40%;
+}
+.left-1{
+    
+    width: 50%;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-size: 200%;
+    background-position-x: 10%;
+}
+.center{
+    margin-left: 10%;
+    color: var(--GrayishBlue);
+}
+h2{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.fourElements-1{
+    display: flex;
+    margin-top:80px;
+    margin-left: 10%;
+    color: var(--GrayishBlue);
+}
+h3{
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.latest{
+    margin-left: 10%;
+    margin-top: 200px;
+}
+.fourElements-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 100px;
+}
+.fourElements-2 img{
+    width: 250px;
+    min-width: 150px;
+    min-height: 200px;
+    border-radius: 15px;
+}
+.element{
+    flex: 0.05;
+   
+
+}
+
+.elementTe{
+    color: var(--GrayishBlue);
+    padding-top: 40px;
+}
+h4 a{
+    color:black;
+}
+h4 a:hover{
+    color: var(--LimeGreen);
+}
+h4{
+    color: black;
+    padding-top: 20px;
+    padding-bottom:20px ;
+}
+
+footer{
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 18vh;
+
+}
+
+footer ul{
+    flex-direction: column;
+    color:var(--GrayishBlue);
+    list-style: none;
+}
+.easy{
+    padding-top: 30px;
+    color: var(--GrayishBlue);
+}
+footer ul li{
+    padding-top: 30px;
+}
+.iconsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    color: var(--GrayishBlue);
+    text-decoration: none;
+}
+.hide{
+    display: none;
+   
+}
+@media(max-width:768px){
+    .mm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 28px;
+        cursor: pointer;
+    }
+    .mm div{
+        width: 40px;
+        background-color: black;
+        height: 2px;
+    }
+   
+   
+.section-1{
+    flex-direction:column-reverse ;
+    text-align: center;
+    margin: 0;
+}
+.fourElements-1{
+    flex-direction: column;
+   text-align: center;
+   margin: 0;
+}
+.fourElements-2{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.latest{
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 0;
+}
+.take{
+   width: 100%;    
+}
+.center{
+    margin-top: 100px;
+    text-align: center;
+    margin: 0;
+}
+h2{
+    font-size: 140%;
+}
+footer{
+    margin-top: 60px;
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.left-1 img{
+    width: 100%;
+}
+h1{
+    font-size: 160%;
+}
+.menu{
+    display: none;
+}
+.button-1{
+    display: none;
+}
+.button-2{
+    margin-top: 12px;
+}
+#main{
+    background-color:white;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 8px;
+    height: 35vh;
+    position: absolute;  
+    box-shadow: 0px 0px 20px 20px var(--GrayishBlue) ;
+
+}
+#main ul{
+    list-style:  none;
+}
+#main li{
+    padding-top: 9%;
+    
+}
+#main a{
+    color: black;
+}
+
+.hide{
+    display: none;
+   
+}
+.text{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+}
